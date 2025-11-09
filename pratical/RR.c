@@ -58,3 +58,27 @@ int main() {
     return 0;
 }
 
+/* output
+sagar@sagar-Lenovo-V15-IIL:~/Pictures/osl$ gcc RR.c
+sagar@sagar-Lenovo-V15-IIL:~/Pictures/osl$ ./a.out
+Enter number of processes: 3
+Enter Arrival Time of P1: 0
+Enter Burst Time of P1: 5
+Enter Arrival Time of P2: 1
+Enter Burst Time of P2: 3
+Enter Arrival Time of P3: 2
+Enter Burst Time of P3: 8
+Enter Time Quantum: 2
+
+Gantt Chart:
+0 -- P1 -- 2 -- P2 -- 4 -- P3 -- 6 -- P1 -- 8 -- P2 -- 9 -- P3 -- 11 -- P1 -- 12 -- P3 -- 14 -- P3 -- 16
+
+Process	AT	BT	WT	TAT
+----------------------------------------
+P1	0	5	7	12
+P2	1	3	5	8
+P3	2	8	6	14
+
+Average Waiting Time: 6.00
+Average Turnaround Time: 11.33
+*/
